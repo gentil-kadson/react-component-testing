@@ -32,7 +32,7 @@ export default function Login() {
           onChange={(e) => setPassword(e.target.value)}
         />
         <button
-          className="bg-amber-500 w-[100%] py-2 rounded-md text-gray-50 font-bold hover:cursor-pointer hover:bg-amber-600"
+          className="bg-amber-500 w-[100%] py-2 rounded-md text-gray-50 font-bold hover:cursor-pointer hover:bg-amber-600 disabled:bg-gray-300 disabled:cursor-not-allowed"
           disabled={!username || !password}
         >
           {loading ? "please wait" : "Login"}
